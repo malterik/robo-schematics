@@ -1,0 +1,618 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR0101
+U 1 1 5F68AF81
+P 2800 1950
+F 0 "#PWR0101" H 2800 1700 50  0001 C CNN
+F 1 "GND" H 2805 1777 50  0000 C CNN
+F 2 "" H 2800 1950 50  0001 C CNN
+F 3 "" H 2800 1950 50  0001 C CNN
+	1    2800 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J1
+U 1 1 5F68CA88
+P 1500 1550
+F 0 "J1" V 1562 1594 50  0000 L CNN
+F 1 "Zybo Power" V 1653 1594 50  0000 L CNN
+F 2 "" H 1500 1550 50  0001 C CNN
+F 3 "~" H 1500 1550 50  0001 C CNN
+	1    1500 1550
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5F68FD33
+P 1500 1750
+F 0 "#PWR0103" H 1500 1500 50  0001 C CNN
+F 1 "GND" H 1650 1650 50  0000 C CNN
+F 2 "" H 1500 1750 50  0001 C CNN
+F 3 "" H 1500 1750 50  0001 C CNN
+	1    1500 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR01
+U 1 1 5F6DD15F
+P 2400 1650
+F 0 "#PWR01" H 2400 1500 50  0001 C CNN
+F 1 "+BATT" H 2415 1823 50  0000 C CNN
+F 2 "" H 2400 1650 50  0001 C CNN
+F 3 "" H 2400 1650 50  0001 C CNN
+	1    2400 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_PMIC-Voltage-Regulators-Linear:L7805CV U2
+U 1 1 5F689AE4
+P 2800 1650
+F 0 "U2" H 2800 1937 60  0000 C CNN
+F 1 "L7805CV" H 2800 1831 60  0000 C CNN
+F 2 "digikey-footprints:TO-220-3" H 3000 1850 60  0001 L CNN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 3000 1950 60  0001 L CNN
+F 4 "497-1443-5-ND" H 3000 2050 60  0001 L CNN "Digi-Key_PN"
+F 5 "L7805CV" H 3000 2150 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 3000 2250 60  0001 L CNN "Category"
+F 7 "PMIC - Voltage Regulators - Linear" H 3000 2350 60  0001 L CNN "Family"
+F 8 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 3000 2450 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/stmicroelectronics/L7805CV/497-1443-5-ND/585964" H 3000 2550 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC REG LINEAR 5V 1.5A TO220AB" H 3000 2650 60  0001 L CNN "Description"
+F 11 "STMicroelectronics" H 3000 2750 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 3000 2850 60  0001 L CNN "Status"
+	1    2800 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:L78L33_SO8 U3
+U 1 1 5F708174
+P 2800 900
+F 0 "U3" H 2800 1142 50  0000 C CNN
+F 1 "L78L33_SO8" H 2800 1051 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 2900 1100 50  0001 C CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/15/55/e5/aa/23/5b/43/fd/CD00000446.pdf/files/CD00000446.pdf/jcr:content/translations/en.CD00000446.pdf" H 3000 900 50  0001 C CNN
+	1    2800 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR0105
+U 1 1 5F70B7C5
+P 2400 900
+F 0 "#PWR0105" H 2400 750 50  0001 C CNN
+F 1 "+BATT" H 2415 1073 50  0000 C CNN
+F 2 "" H 2400 900 50  0001 C CNN
+F 3 "" H 2400 900 50  0001 C CNN
+	1    2400 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 900  2500 900 
+$Comp
+L power:GND #PWR0106
+U 1 1 5F70C180
+P 2800 1200
+F 0 "#PWR0106" H 2800 950 50  0001 C CNN
+F 1 "GND" H 2950 1200 50  0000 C CNN
+F 2 "" H 2800 1200 50  0001 C CNN
+F 3 "" H 2800 1200 50  0001 C CNN
+	1    2800 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0107
+U 1 1 5F70C6AD
+P 3200 900
+F 0 "#PWR0107" H 3200 750 50  0001 C CNN
+F 1 "+3.3V" H 3215 1073 50  0000 C CNN
+F 2 "" H 3200 900 50  0001 C CNN
+F 3 "" H 3200 900 50  0001 C CNN
+	1    3200 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 900  3100 900 
+$Comp
+L power:+5V #PWR0109
+U 1 1 5F71AA02
+P 3200 1650
+F 0 "#PWR0109" H 3200 1500 50  0001 C CNN
+F 1 "+5V" H 3215 1823 50  0000 C CNN
+F 2 "" H 3200 1650 50  0001 C CNN
+F 3 "" H 3200 1650 50  0001 C CNN
+	1    3200 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 1650 3200 1650
+Wire Wire Line
+	2400 1650 2500 1650
+$Comp
+L power:+5V #PWR0112
+U 1 1 5F6D9CCE
+P 1400 1750
+F 0 "#PWR0112" H 1400 1600 50  0001 C CNN
+F 1 "+5V" H 1550 1850 50  0000 C CNN
+F 2 "" H 1400 1750 50  0001 C CNN
+F 3 "" H 1400 1750 50  0001 C CNN
+	1    1400 1750
+	-1   0    0    1   
+$EndComp
+$Comp
+L battery:MAX17055AEWL+ U4
+U 1 1 5F718BC4
+P 4850 1800
+F 0 "U4" H 5650 2187 60  0000 C CNN
+F 1 "MAX17055AEWL+" H 5650 2081 60  0000 C CNN
+F 2 "21-100129A_W91N1+1_MXM" H 5650 2040 60  0001 C CNN
+F 3 "" H 4850 1800 60  0000 C CNN
+	1    4850 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J4
+U 1 1 5F706ECB
+P 3850 1700
+F 0 "J4" V 3912 1744 50  0000 L CNN
+F 1 "Battery Connector" V 3750 1350 50  0000 L CNN
+F 2 "" H 3850 1700 50  0001 C CNN
+F 3 "~" H 3850 1700 50  0001 C CNN
+	1    3850 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5F725F09
+P 3750 2000
+F 0 "#FLG0101" H 3750 2075 50  0001 C CNN
+F 1 "PWR_FLAG" H 3700 2200 50  0000 L CNN
+F 2 "" H 3750 2000 50  0001 C CNN
+F 3 "~" H 3750 2000 50  0001 C CNN
+	1    3750 2000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5F726857
+P 3850 2000
+F 0 "#FLG0102" H 3850 2075 50  0001 C CNN
+F 1 "PWR_FLAG" V 3850 2128 50  0000 L CNN
+F 2 "" H 3850 2000 50  0001 C CNN
+F 3 "~" H 3850 2000 50  0001 C CNN
+	1    3850 2000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3850 1900 3850 2000
+Wire Wire Line
+	3750 1900 3750 2000
+Wire Wire Line
+	3850 2000 3850 2100
+Wire Wire Line
+	3850 2100 4400 2100
+Connection ~ 3850 2000
+$Comp
+L Device:R R5
+U 1 1 5F72FE33
+P 4350 1350
+F 0 "R5" V 4143 1350 50  0000 C CNN
+F 1 "10m" V 4234 1350 50  0000 C CNN
+F 2 "" V 4280 1350 50  0001 C CNN
+F 3 "~" H 4350 1350 50  0001 C CNN
+	1    4350 1350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3750 2000 3750 2100
+Wire Wire Line
+	3750 2100 3450 2100
+Wire Wire Line
+	3450 2100 3450 1350
+Wire Wire Line
+	3450 1350 4200 1350
+Connection ~ 3750 2000
+Wire Wire Line
+	4500 1350 4500 2000
+Wire Wire Line
+	4500 2000 4850 2000
+Wire Wire Line
+	4500 1350 6700 1350
+Connection ~ 4500 1350
+Wire Wire Line
+	6450 1800 6450 1100
+Wire Wire Line
+	6450 1100 4200 1100
+Wire Wire Line
+	4200 1100 4200 1350
+Connection ~ 4200 1350
+$Comp
+L Device:C C1
+U 1 1 5F738003
+P 4850 2250
+F 0 "C1" H 4600 2300 50  0000 L CNN
+F 1 "0.1µF" H 4500 2200 50  0000 L CNN
+F 2 "" H 4888 2100 50  0001 C CNN
+F 3 "~" H 4850 2250 50  0001 C CNN
+	1    4850 2250
+	1    0    0    -1  
+$EndComp
+Connection ~ 4850 2100
+$Comp
+L power:GND #PWR0111
+U 1 1 5F739A6A
+P 4850 2400
+F 0 "#PWR0111" H 4850 2150 50  0001 C CNN
+F 1 "GND" H 4855 2227 50  0000 C CNN
+F 2 "" H 4850 2400 50  0001 C CNN
+F 3 "" H 4850 2400 50  0001 C CNN
+	1    4850 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-BATT #PWR0113
+U 1 1 5F73B5AC
+P 6700 1350
+F 0 "#PWR0113" H 6700 1200 50  0001 C CNN
+F 1 "-BATT" H 6715 1523 50  0000 C CNN
+F 2 "" H 6700 1350 50  0001 C CNN
+F 3 "" H 6700 1350 50  0001 C CNN
+	1    6700 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR0114
+U 1 1 5F73C5B6
+P 6700 2750
+F 0 "#PWR0114" H 6700 2600 50  0001 C CNN
+F 1 "+BATT" H 6715 2923 50  0000 C CNN
+F 2 "" H 6700 2750 50  0001 C CNN
+F 3 "" H 6700 2750 50  0001 C CNN
+	1    6700 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 2750 4400 2750
+Wire Wire Line
+	4400 2750 4400 2100
+Connection ~ 4400 2100
+Wire Wire Line
+	4400 2100 4850 2100
+$Comp
+L Device:C C2
+U 1 1 5F73DF11
+P 7100 2250
+F 0 "C2" H 7215 2296 50  0000 L CNN
+F 1 "0.47µF" H 7215 2205 50  0000 L CNN
+F 2 "" H 7138 2100 50  0001 C CNN
+F 3 "~" H 7100 2250 50  0001 C CNN
+	1    7100 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 2100 6450 2100
+$Comp
+L power:GND #PWR0115
+U 1 1 5F740741
+P 7100 2400
+F 0 "#PWR0115" H 7100 2150 50  0001 C CNN
+F 1 "GND" H 7105 2227 50  0000 C CNN
+F 2 "" H 7100 2400 50  0001 C CNN
+F 3 "" H 7100 2400 50  0001 C CNN
+	1    7100 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_PMIC-Full-Half-Bridge-Drivers:L298N U5
+U 1 1 5F74FB36
+P 6750 3600
+F 0 "U5" H 6600 2850 60  0000 C CNN
+F 1 "L298N" H 6600 2750 60  0000 C CNN
+F 2 "digikey-footprints:Multiwatt-15" H 6950 3800 60  0001 L CNN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/82/cc/3f/39/0a/29/4d/f0/CD00000240.pdf/files/CD00000240.pdf/jcr:content/translations/en.CD00000240.pdf" H 6950 3900 60  0001 L CNN
+F 4 "497-1395-5-ND" H 6950 4000 60  0001 L CNN "Digi-Key_PN"
+F 5 "L298N" H 6950 4100 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 6950 4200 60  0001 L CNN "Category"
+F 7 "PMIC - Full, Half-Bridge Drivers" H 6950 4300 60  0001 L CNN "Family"
+F 8 "http://www.st.com/content/ccc/resource/technical/document/datasheet/82/cc/3f/39/0a/29/4d/f0/CD00000240.pdf/files/CD00000240.pdf/jcr:content/translations/en.CD00000240.pdf" H 6950 4400 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/stmicroelectronics/L298N/497-1395-5-ND/585918" H 6950 4500 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC BRIDGE DRIVER PAR 15MULTIWATT" H 6950 4600 60  0001 L CNN "Description"
+F 11 "STMicroelectronics" H 6950 4700 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 6950 4800 60  0001 L CNN "Status"
+	1    6750 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x05_Counter_Clockwise J5
+U 1 1 5F74FB40
+P 5350 3600
+F 0 "J5" H 5400 4017 50  0000 C CNN
+F 1 "Zybo Connector" H 5400 3926 50  0000 C CNN
+F 2 "" H 5350 3600 50  0001 C CNN
+F 3 "~" H 5350 3600 50  0001 C CNN
+	1    5350 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 3400 6350 3400
+Wire Wire Line
+	5650 3500 6350 3500
+Wire Wire Line
+	5650 3600 6350 3600
+Wire Wire Line
+	5650 3700 6350 3700
+$Comp
+L power:+BATT #PWR0116
+U 1 1 5F74FB4E
+P 6750 3200
+F 0 "#PWR0116" H 6750 3050 50  0001 C CNN
+F 1 "+BATT" H 6600 3200 50  0000 C CNN
+F 2 "" H 6750 3200 50  0001 C CNN
+F 3 "" H 6750 3200 50  0001 C CNN
+	1    6750 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male J6
+U 1 1 5F74FB58
+P 7450 3800
+F 0 "J6" H 7512 3944 50  0000 L CNN
+F 1 "Motor" V 7350 3700 50  0000 L CNN
+F 2 "" H 7450 3800 50  0001 C CNN
+F 3 "~" H 7450 3800 50  0001 C CNN
+	1    7450 3800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7250 3600 7050 3600
+Wire Wire Line
+	7050 3700 7250 3700
+Wire Wire Line
+	7250 3800 7050 3800
+Wire Wire Line
+	7050 3900 7250 3900
+$Comp
+L power:GND #PWR0117
+U 1 1 5F74FB66
+P 6750 4300
+F 0 "#PWR0117" H 6750 4050 50  0001 C CNN
+F 1 "GND" H 6850 4300 50  0000 C CNN
+F 2 "" H 6750 4300 50  0001 C CNN
+F 3 "" H 6750 4300 50  0001 C CNN
+	1    6750 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0118
+U 1 1 5F74FB70
+P 6850 3200
+F 0 "#PWR0118" H 6850 3050 50  0001 C CNN
+F 1 "+5V" H 6950 3200 50  0000 C CNN
+F 2 "" H 6850 3200 50  0001 C CNN
+F 3 "" H 6850 3200 50  0001 C CNN
+	1    6850 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 4700 5800 4700
+Wire Wire Line
+	5250 4700 5400 4700
+$Comp
+L Device:R R8
+U 1 1 5F74FB7C
+P 5950 4550
+F 0 "R8" H 6020 4596 50  0000 L CNN
+F 1 "10k" H 6020 4505 50  0000 L CNN
+F 2 "" V 5880 4550 50  0001 C CNN
+F 3 "~" H 5950 4550 50  0001 C CNN
+	1    5950 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0119
+U 1 1 5F74FB86
+P 5950 4400
+F 0 "#PWR0119" H 5950 4250 50  0001 C CNN
+F 1 "+5V" H 5965 4573 50  0000 C CNN
+F 2 "" H 5950 4400 50  0001 C CNN
+F 3 "" H 5950 4400 50  0001 C CNN
+	1    5950 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 4250 5250 4400
+$Comp
+L Device:R R6
+U 1 1 5F74FB91
+P 5250 4550
+F 0 "R6" H 5320 4596 50  0000 L CNN
+F 1 "10k" H 5320 4505 50  0000 L CNN
+F 2 "" V 5180 4550 50  0001 C CNN
+F 3 "~" H 5250 4550 50  0001 C CNN
+	1    5250 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0120
+U 1 1 5F74FB9B
+P 5250 4250
+F 0 "#PWR0120" H 5250 4100 50  0001 C CNN
+F 1 "+3.3V" H 5265 4423 50  0000 C CNN
+F 2 "" H 5250 4250 50  0001 C CNN
+F 3 "" H 5250 4250 50  0001 C CNN
+	1    5250 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Transistors-FETs-MOSFETs-Single:BSS138 Q3
+U 1 1 5F74FBAE
+P 5600 4700
+F 0 "Q3" V 5761 4700 60  0000 C CNN
+F 1 "BSS138" V 5867 4700 60  0000 C CNN
+F 2 "digikey-footprints:SOT-23-3" H 5800 4900 60  0001 L CNN
+F 3 "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF" H 5800 5000 60  0001 L CNN
+F 4 "BSS138CT-ND" H 5800 5100 60  0001 L CNN "Digi-Key_PN"
+F 5 "BSS138" H 5800 5200 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 5800 5300 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 5800 5400 60  0001 L CNN "Family"
+F 8 "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF" H 5800 5500 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/on-semiconductor/BSS138/BSS138CT-ND/244294" H 5800 5600 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET N-CH 50V 220MA SOT-23" H 5800 5700 60  0001 L CNN "Description"
+F 11 "ON Semiconductor" H 5800 5800 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 5800 5900 60  0001 L CNN "Status"
+	1    5600 4700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5950 5750 5800 5750
+Wire Wire Line
+	5250 5750 5400 5750
+$Comp
+L Device:R R9
+U 1 1 5F74FBBA
+P 5950 5600
+F 0 "R9" H 6020 5646 50  0000 L CNN
+F 1 "10k" H 6020 5555 50  0000 L CNN
+F 2 "" V 5880 5600 50  0001 C CNN
+F 3 "~" H 5950 5600 50  0001 C CNN
+	1    5950 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0121
+U 1 1 5F74FBC4
+P 5950 5450
+F 0 "#PWR0121" H 5950 5300 50  0001 C CNN
+F 1 "+5V" H 5965 5623 50  0000 C CNN
+F 2 "" H 5950 5450 50  0001 C CNN
+F 3 "" H 5950 5450 50  0001 C CNN
+	1    5950 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 5300 5250 5450
+$Comp
+L Device:R R7
+U 1 1 5F74FBCF
+P 5250 5600
+F 0 "R7" H 5100 5650 50  0000 L CNN
+F 1 "10k" H 5050 5550 50  0000 L CNN
+F 2 "" V 5180 5600 50  0001 C CNN
+F 3 "~" H 5250 5600 50  0001 C CNN
+	1    5250 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0122
+U 1 1 5F74FBD9
+P 5250 5300
+F 0 "#PWR0122" H 5250 5150 50  0001 C CNN
+F 1 "+3.3V" H 5265 5473 50  0000 C CNN
+F 2 "" H 5250 5300 50  0001 C CNN
+F 3 "" H 5250 5300 50  0001 C CNN
+	1    5250 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Transistors-FETs-MOSFETs-Single:BSS138 Q4
+U 1 1 5F74FBEC
+P 5600 5750
+F 0 "Q4" V 5761 5750 60  0000 C CNN
+F 1 "BSS138" V 5867 5750 60  0000 C CNN
+F 2 "digikey-footprints:SOT-23-3" H 5800 5950 60  0001 L CNN
+F 3 "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF" H 5800 6050 60  0001 L CNN
+F 4 "BSS138CT-ND" H 5800 6150 60  0001 L CNN "Digi-Key_PN"
+F 5 "BSS138" H 5800 6250 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 5800 6350 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 5800 6450 60  0001 L CNN "Family"
+F 8 "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF" H 5800 6550 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/on-semiconductor/BSS138/BSS138CT-ND/244294" H 5800 6650 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET N-CH 50V 220MA SOT-23" H 5800 6750 60  0001 L CNN "Description"
+F 11 "ON Semiconductor" H 5800 6850 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 5800 6950 60  0001 L CNN "Status"
+	1    5600 5750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5250 5450 5500 5450
+Connection ~ 5250 5450
+Wire Wire Line
+	5500 4400 5250 4400
+Connection ~ 5250 4400
+Wire Wire Line
+	5950 4700 6150 4700
+Wire Wire Line
+	6150 4700 6150 3800
+Wire Wire Line
+	6150 3800 6350 3800
+Connection ~ 5950 4700
+Wire Wire Line
+	6350 3900 6200 3900
+Wire Wire Line
+	6200 5750 5950 5750
+Wire Wire Line
+	6200 3900 6200 5750
+Connection ~ 5950 5750
+Wire Wire Line
+	5150 3800 5050 3800
+Wire Wire Line
+	5050 3800 5050 4700
+Wire Wire Line
+	5050 4700 5250 4700
+Connection ~ 5250 4700
+Wire Wire Line
+	5150 3700 4950 3700
+Wire Wire Line
+	4950 3700 4950 5750
+Wire Wire Line
+	4950 5750 5250 5750
+Connection ~ 5250 5750
+Wire Wire Line
+	6450 2200 6450 2600
+Wire Wire Line
+	6450 2600 4950 2600
+Wire Wire Line
+	4950 2600 4950 3600
+Wire Wire Line
+	4950 3600 5150 3600
+Wire Wire Line
+	6450 2000 6550 2000
+Wire Wire Line
+	6550 2000 6550 2700
+Wire Wire Line
+	6550 2700 5050 2700
+Wire Wire Line
+	5050 2700 5050 3500
+Wire Wire Line
+	5050 3500 5150 3500
+Wire Wire Line
+	4850 1900 4450 1900
+Wire Wire Line
+	4450 1900 4450 3400
+Wire Wire Line
+	4450 3400 5150 3400
+$Comp
+L power:GND #PWR0123
+U 1 1 5F784A15
+P 6700 1350
+F 0 "#PWR0123" H 6700 1100 50  0001 C CNN
+F 1 "GND" H 6705 1177 50  0000 C CNN
+F 2 "" H 6700 1350 50  0001 C CNN
+F 3 "" H 6700 1350 50  0001 C CNN
+	1    6700 1350
+	1    0    0    -1  
+$EndComp
+Connection ~ 6700 1350
+$EndSCHEMATC
